@@ -1,0 +1,8 @@
+{
+  "contest": 358,
+  "handle": "cheatc0d3",
+  "risk": "3",
+  "title": "Inability to Remove Compromised Owners Due to Data Loss and Lack of Backup Records",
+  "issueId": 18,
+  "issueUrl": "https://github.com/code-423n4/2024-04-coinbase-mitigation-findings/issues/18"
+}
