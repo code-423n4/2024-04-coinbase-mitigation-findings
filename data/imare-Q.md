@@ -1,5 +1,13 @@
 # Lines of code
 
+https://github.com/code-423n4/2024-03-coinbase/blob/e0573369b865d47fed778de00a7b6df65ab1744e/src/WebAuthnSol/WebAuthn.sol#L109-L112
+https://github.com/code-423n4/2024-03-coinbase/blob/e0573369b865d47fed778de00a7b6df65ab1744e/src/WebAuthnSol/WebAuthn.sol#L160
+
+
+# Vulnerability details
+
+# Lines of code
+
 https://github.com/code-423n4/2024-03-coinbase/blob/e0573369b865d47fed778de00a7b6df65ab1744e/src/WebAuthnSol/WebAuthn.sol#L160
 
 
@@ -22,12 +30,17 @@ The following [comment](https://github.com/rdubois-crypto/FreshCryptoLib/pull/65
 
 "*This PR fixes unicity in the representation of a point. While it is not a vulnerability as such, but rather malleability, it is correct that unexpected uses of malleability can lead to disaster.*"
 
+Note : The line https://github.com/code-423n4/2024-03-coinbase/blob/e0573369b865d47fed778de00a7b6df65ab1744e/src/WebAuthnSol/WebAuthn.sol#L109-L112 is not a guard for signature malleability as the comment says but is used to check if the signature is *normalized* when passed to the 'FCL.sol' library. 
+
 ## Tools Used
 Manual review
 
 ## Recommended Mitigation Steps
 
 Apply the patch from the mentioned PR or use the latest version of the `FreshCryptoLib` library where the PR is already applied.
+
+
+
 
 
 
